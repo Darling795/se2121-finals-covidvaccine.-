@@ -5,12 +5,12 @@ AS
 
 $$
 BEGIN
-
-    INSERT INTO locations (loc_name, loc_iso_code)
-    SELECT vbl_location, vbl_iso_code
-    FROM vaccines_by_location;
-
-    COMMIT;
-
+  INSERT INTO
+    locations (loc_iso_code, loc_name)
+  SELECT
+    vbl_iso_code,
+    vbl_location
+  FROM
+    vaccines_by_location;
 END;
-$$
+

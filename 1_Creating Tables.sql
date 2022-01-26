@@ -2,11 +2,11 @@ CREATE DATABASE covid_db;
 
 CREATE TABLE locations (
     loc_name VARCHAR(120),
-    loc_iso_code VARCHAR(15) PRIMARY KEY
+    loc_iso_code VARCHAR(15) NOT FULL INTEGER
 );
 
 CREATE TABLE vaccines (
-    vac_name VARCHAR(100) PRIMARY KEY
+    vac_name VARCHAR(100) NOT FULL INTEGER
 );
 
 CREATE TABLE vaccinations_by_manufacturer (

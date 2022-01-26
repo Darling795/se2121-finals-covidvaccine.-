@@ -6,7 +6,9 @@ $$
 BEGIN
 
     INSERT INTO vaccines (vac_name)
-    SELECT UNNEST(string_to_array(vbl_vaccines, ', ')) FROM vaccines_by_location
+    SELECT UNNEST(string_to_array(vbl_vaccines, ', ')) 
+	
+FROM vaccines_by_location
 
     COMMIT;
 
