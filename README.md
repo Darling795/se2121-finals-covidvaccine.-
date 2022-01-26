@@ -19,9 +19,3 @@ iso_code: three-letter country codes.
 date: date of the observation.
 total_vaccinations: total number of doses administered.
 daily_vaccinations: new doses administered per day (7-day smoothed).
-[These were the one used for this project but there's more data given in the file.]
-SQL FILES
-covid_db : contians the tables 'locations', 'vaccines', 'vaccinations_by_manufacturer', and 'vaccines_by_location'.
-import : used to import the csv files (datasets) to the tables.
-Functions
-location_function : contains a function that would have location name and date as its input and would return the no. 
